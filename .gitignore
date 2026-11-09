@@ -1,0 +1,47 @@
+# ═══════════════════════════════════════════════════════════════
+#  Atención Dgtal · .gitignore
+#  Lo que Git NUNCA debe subir a GitHub:
+#  secretos, datos locales y archivos generados por el sistema.
+#  No borres ni edites este archivo sin leer GITHUB.md (apartado 10).
+# ═══════════════════════════════════════════════════════════════
+
+# --- Secretos: TU API KEY NO SUBE NUNCA ---
+.env
+.env.local
+.env.*.local
+
+# --- Entorno virtual de Python (se recrea con instalar.sh) ---
+.venv/
+venv/
+env/
+
+# --- Base de datos local (se crea sola al primer arranque) ---
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Respaldos locales (los ZIP del asistente; súbelos tú a donde quieras) ---
+respaldos/
+
+# --- Cachés de Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Distribución / builds ---
+dist/
+build/
+*.spec
+
+# --- Editores e IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
